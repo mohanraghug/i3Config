@@ -203,12 +203,13 @@ exec_always feh --bg-scale /home/mohanr/Downloads/wall2.jpg
 exec_always python3 ~/Desktop/PythonBooks/scraper.py
 #Network Manager
 exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
 #Media Player Controls
 bindsym XF86AudioPlay exec playerctl play
 bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
-exec --no-startup-id synclient HorizEdgeScroll=1 VertEdgeScroll=1 VertScrollDelta=-111
+exec --no-startup-id synclient HorizEdgeScroll=1 VertEdgeScroll=1 VertScrollDelta=-111u
 #Power Manager
 exec xfce4-power-manager
 
